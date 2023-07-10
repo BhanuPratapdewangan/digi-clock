@@ -3,7 +3,7 @@ const hour = document.getElementById("hours");
 const minute = document.getElementById("minutes");
 const second = document.getElementById("seconds");
 
-const ampm = document.getElementById("ampm");
+var ampm = document.getElementById("ampm");
 
 function updateClock()
 {
@@ -26,7 +26,7 @@ function updateClock()
     hour.innerText = h;
     minute.innerText = m;
     second.innerText = s;
-
+    ampm.innerText = ampm;
     setTimeout(() => {
         updateClock()
     }, 1000);

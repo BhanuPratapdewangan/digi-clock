@@ -7,7 +7,7 @@ body
     text-align: center;
     height: 100vh;
     justify-content: center;
-    background:url("/digi-clock/public/Images/background-image.avif");
+    background:url("/digi-clock/public/Images/background-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sans-serif;
