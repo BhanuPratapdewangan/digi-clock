@@ -17,7 +17,9 @@ function updateClock()
     {
         h = h-12;
         ampm = "PM";
-    } 
+    } else{
+        ampm = "AM";
+    }
     
     h = h < 10 ? "0" + h : h;
     m = m < 10 ? "0" + m : m;
@@ -27,13 +29,12 @@ function updateClock()
     minute.innerText = m;
     second.innerText = s;
     ampm.innerText = ampm;
-    setTimeout(() => {
-        updateClock()
-    }, 1000);
    
     // ampm,(innerText==ampm);
-
-   
 }
 
-updateClock();
+setTimeout(() => {
+    updateClock()
+}, 1000);
+
+// updateClock();
