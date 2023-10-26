@@ -1,4 +1,78 @@
+@media only screen and (orientation : landscape) {
 
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        justify-content: center;
+        background: url("/public/Images/background-image.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: sans-serif;
+    }
+
+    h2 {
+        color: white;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .clock {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+    }
+
+    .clock div {
+        margin: 5px;
+        position: relative;
+    }
+
+    .clock span {
+        width: 100px;
+        height: 70px;
+        background: slateblue;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .clock .text {
+        height: 30px;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background: darkblue;
+        opacity: 1;
+        align-items: center;
+
+    }
+
+    #ampm {
+        bottom: 0;
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        font-size: 20px;
+        align-items: center;
+        color: white;
+        background: pink;
+    }
+
+}
+
+@media only screen and (orientation : portrait){
+    
 body
 {
     margin: 0;
@@ -7,7 +81,7 @@ body
     text-align: center;
     height: 100vh;
     justify-content: center;
-    background:url("/digi-clock/public/Images/background-image.jpg");
+    background:url("/public/Images/background-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sans-serif;
@@ -18,14 +92,17 @@ h2
     color: white;
     letter-spacing: 4px;
     text-transform:  uppercase;
-    font-size: 14px;
+    font-size: 10px;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .clock 
 {   
     display:flex;
     justify-content: center;
+    margin-top: 1rem;
+
 }
 
 .clock div
@@ -36,37 +113,40 @@ h2
 
 .clock span
 {
-    width: 100px;
-    height: 60px;
+    width: 70px;
+    height: 40px;
     background:slateblue;
     opacity: 0.8;
     color: white;
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 50px;
+    font-size: 25px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .clock .text 
 {
-    height:30px;
-    font-size: 10px;
+    height:25px;
+    font-size: 8px;
     text-transform: uppercase;
     letter-spacing: 2px;
     background:darkblue;
-    opacity: 0.8;
+    opacity: 1;
     align-items: center;
-    
 }
 
 #ampm 
 {
     bottom: 0;
     position:absolute;
-    width: 60px;
-    height: 30px;
-    font-size: 20px;
+    width: 40px;
+    height: 20px;
+    font-size: 13px;
     align-items: center;
-    background: rgb(100, 212, 100);
+    color:white;
+    background: pink;
 }
+
+}
+
