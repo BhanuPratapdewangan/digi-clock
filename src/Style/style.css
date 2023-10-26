@@ -71,82 +71,74 @@
 
 }
 
-@media only screen and (orientation : portrait){
-    
-body
-{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 100vh;
-    justify-content: center;
-    background:url("/public/Images/background-image.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: sans-serif;
-}
+@media only screen and (orientation : portrait) {
 
-h2 
-{
-    color: white;
-    letter-spacing: 4px;
-    text-transform:  uppercase;
-    font-size: 10px;
-    text-align: center;
-    font-size: 1.2rem;
-}
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        justify-content: center;
+        background: url("/public/Images/background-image.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: sans-serif;
+    }
 
-.clock 
-{   
-    display:flex;
-    justify-content: center;
-    margin-top: 1rem;
+    h2 {
+        color: white;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
 
-}
+    .clock {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
 
-.clock div
-{
-    margin: 5px;
-    position: relative;
-}
+    .clock div {
+        margin-left: 10px;
+        position: relative;
+        box-shadow: 0px 0px 10px blueviolet;
+    }
 
-.clock span
-{
-    width: 70px;
-    height: 40px;
-    background:slateblue;
-    opacity: 0.8;
-    color: white;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 25px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
+    .clock span {
+        width: 70px;
+        height: 40px;
+        background: slateblue;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 25px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
 
-.clock .text 
-{
-    height:25px;
-    font-size: 8px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background:darkblue;
-    opacity: 1;
-    align-items: center;
-}
+    .clock .text {
+        height: 25px;
+        font-size: 8px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background: darkblue;
+        opacity: 1;
+        align-items: center;
+    }
 
-#ampm 
-{
-    bottom: 0;
-    position:absolute;
-    width: 40px;
-    height: 20px;
-    font-size: 13px;
-    align-items: center;
-    color:white;
-    background: pink;
-}
+    #ampm {
+        bottom: 0;
+        position: absolute;
+        width: 45px;
+        height: 25px;
+        font-size: 13px;
+        align-items: center;
+        color: white;
+        background: pink;
+    }
 
 }
-
