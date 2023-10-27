@@ -13,11 +13,11 @@ function updateClock() {
     let pmam = ampm;
 
     if (h >= 12) {
-        if(h > 12){
+        if (h > 12) {
             h = h - 12;
         }
-        pmam = 'PM';        
-    } 
+        pmam = 'PM';
+    }
 
     h = h < 10 ? "0" + h : h;
     m = m < 10 ? "0" + m : m;
@@ -27,11 +27,13 @@ function updateClock() {
     hour.innerHTML = h;
     minute.innerHTML = m;
     second.innerText = s;
-    ampm.innerHTML= pmam;
+    ampm.innerHTML = pmam;
 
     setTimeout(() => {
         updateClock();
     }, 1000)
+
 }
+
 
 updateClock();
