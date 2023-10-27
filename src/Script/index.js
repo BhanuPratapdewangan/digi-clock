@@ -13,9 +13,11 @@ function updateClock() {
     let pmam = ampm;
 
     if (h >= 12) {
-        h = h - 12;
-        pmam = 'PM';
-    }
+        if(h > 12){
+            h = h - 12;
+        }
+        pmam = 'PM';        
+    } 
 
     h = h < 10 ? "0" + h : h;
     m = m < 10 ? "0" + m : m;
