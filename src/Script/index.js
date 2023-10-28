@@ -17,6 +17,8 @@ function updateClock() {
             h = h - 12;
         }
         pmam = 'PM';
+    } else {
+        pmam = 'AM';
     }
 
     h = h < 10 ? "0" + h : h;
